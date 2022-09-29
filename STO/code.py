@@ -10,13 +10,14 @@ hostfile = os.path.join(directory,input ("\n Name of Host File :-\n"))
 username = 'supun'
 password = 'Juniper!1'
 platform = 'juniper_junos'
+port = '22'
 
 with open(hostfile) as f:
     for line in f:
         host = line.strip()
         try:
             print ("\nConnecting ")
-      net_connect = ConnectHandler(device_type=platform, ip=host, username=username, password=password)
+      net_connect = ConnectHandler(device_type=platform, ip=host, username=username, password=password, port = port) 
       print ('\nConnected to {}, gathering info...\n'.format(host))
 
 with open(conf) as f:
