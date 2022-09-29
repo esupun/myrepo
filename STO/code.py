@@ -1,7 +1,7 @@
     #!/usr/local/bin/python3
  
 
-    From netmiko import ConnectHandler
+    from netmiko import ConnectHandler
     import os
     directory = os.getcwd()
 
