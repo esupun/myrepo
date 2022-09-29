@@ -20,16 +20,16 @@ with open(hostfile) as f:
 			net_connect = ConnectHandler(device_type=platform, ip=host, username=username, password=password, port = port)
 			print ('\nConnected to {}, gathering info...\n'.format(host))
 
-with open(conf) as f:
-	for line in f:
-		command=line.strip()
-		try:
-			print(command)
-			output = net_connect.send_command(command)
-			print(output)
+			with open(conf) as f:
+				for line in f:
+					command=line.strip()
+					try:
+						print(command)
+						output = net_connect.send_command(command)
+						print(output)
 
-		except:
-			print("Error running {} command".format(command))
+					except:
+						print("Error running {} command".format(command))
 
 		except:
 			print ('Error Connecting {}'.format(host)) 
