@@ -16,9 +16,9 @@ with open(hostfile) as f:
     for line in f:
         host = line.strip()
         try:
-            print ("\nConnecting ")
-			net_connect = ConnectHandler(device_type=platform, ip=host, username=username, password=password, port = port) 
-			print ('\nConnected to {}, gathering info...\n'.format(host))
+            	print ("\nConnecting ")
+		net_connect = ConnectHandler(device_type=platform, ip=host, username=username, password=password, port = port) 
+		print ('\nConnected to {}, gathering info...\n'.format(host))
 
 with open(conf) as f:
    for line in f:
