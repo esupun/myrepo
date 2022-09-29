@@ -1,1 +1,1 @@
-file list /var/log/ detail | match img
+file list /var/log/ detail | match chassisd
