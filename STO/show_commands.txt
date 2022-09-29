@@ -1,1 +1,1 @@
-show interface ge-0/0/0 terse
+file list /var/log/ detail | match img
