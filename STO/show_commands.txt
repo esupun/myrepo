@@ -1,1 +1,1 @@
-file list /var/log/ detail | match chassisd
+show system storage | match /var/log
