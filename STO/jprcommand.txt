@@ -10,3 +10,5 @@ dd if=/dev/zero of=1g.img bs=1 count=0 seek=1G
 public/private key pair
 
 more exception handling
+
+multithreading
