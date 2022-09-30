@@ -28,6 +28,7 @@ with open(hostfile) as f:
 						output = net_connect.send_command(command)
 						print(output)
 						log_init = int(output.split()[4].split('%')[0])
+						print(log_init)
 						if log_init < 80:
 							com_out = net_connect.send_command_timing(command_string = 'request system storage cleanup')
 							if "Delete these files" in com_out:
