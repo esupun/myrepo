@@ -5,8 +5,8 @@ start shell
 cd /var/log/
 dd if=/dev/zero of=1g.img bs=1 count=0 seek=1G
 
-optimizations
+//optimizations
+
 public/private key pair
 
-try: 
-
+more exception handling
