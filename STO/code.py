@@ -31,8 +31,9 @@ with open(hostfile) as f:
 						if log_init < 80:
 							com_out = net_connect.send_command_timing(command_string = 'request system storage cleanup')
 							if "Delete these files" in com_out:
-								com_out += net_connect.send_command_timing(command_string ="yes",strip_prompt=False,strip_command=False)
 								print ("\nCleaning \var\log directory  ")
+								com_out += net_connect.send_command_timing(command_string ="yes",strip_prompt=False,strip_command=False)
+								
 
 					except:
 						print("Error running {} command".format(command))
