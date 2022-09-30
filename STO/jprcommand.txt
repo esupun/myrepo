@@ -1,5 +1,12 @@
+
+//to create a dummy file
+
 start shell
-
 cd /var/log/
-
 dd if=/dev/zero of=1g.img bs=1 count=0 seek=1G
+
+optimizations
+public/private key pair
+
+try: 
+
